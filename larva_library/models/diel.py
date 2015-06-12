@@ -11,7 +11,7 @@ class Diel(Document):
         'time'          : datetime,
         'cycle'         : unicode,
         'plus_or_minus' : unicode,
-        'hours'         : int,
+        'hours'         : OR(int, float),
         'min'           : OR(int, float),
         'max'           : OR(int, float)
     }

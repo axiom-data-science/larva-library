@@ -13,7 +13,7 @@ class LifeStage(Document):
     use_autorefs = True
     structure = {
         'name'      : unicode,
-        'duration'  : int,
+        'duration'  : OR(int, float),
         'linear_a'  : OR(int, float),
         'linear_b'  : OR(int, float),
         'diel'      : [Diel],
