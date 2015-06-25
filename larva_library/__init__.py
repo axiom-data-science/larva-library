@@ -12,7 +12,7 @@ app.config.from_envvar('APPLICATION_SETTINGS', silent=True)
 if app.config.get('LOG_FILE') == True:
     import logging
     from logging import FileHandler
-    file_handler = FileHandler('log.txt')
+    file_handler = FileHandler('logs/larval-behavior.txt')
     file_handler.setLevel(logging.INFO)
     app.logger.addHandler(file_handler)
 

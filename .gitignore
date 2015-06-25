@@ -8,5 +8,5 @@ build
 .env
 *.diff
 *.bak
-*log*
+*.log
 *.swp
