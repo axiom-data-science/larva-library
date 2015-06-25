@@ -17,7 +17,7 @@ if app.config.get('LOG_FILE') == True:
     app.logger.addHandler(file_handler)
 
 if app.config['TESTING'] is True:
-    app.config['MONGODB_DATABASE'] = 'fishreport_testing'
+    app.config['MONGODB_DATABASE'] = 'larval_behavior_testing'
 
 oauth = OAuth()
 
